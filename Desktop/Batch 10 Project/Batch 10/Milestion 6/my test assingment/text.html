@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen">
+    <button id="open-modal" class="btn btn-accent">Open Timer Modal</button>
+
+    <div id="modal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-xl font-bold mb-4">Countdown Timer</h2>
+            <div id="timer" class="text-3xl font-bold mb-4">3</div> <!-- Display the countdown -->
+            <button id="close-modal" class="btn">Close</button>
+        </div>
+    </div>
+
+    <script src="./text.js"></script>
+</body>
+</html>
